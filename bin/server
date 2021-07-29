@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd "$(dirname "$0")/.."
+
+redis-server config/6380.conf
