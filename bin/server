@@ -2,4 +2,6 @@
 
 cd "$(dirname "$0")/.."
 
-redis-server config/6380.conf
+PORT="${1:-6380}"
+
+redis-server "config/$PORT.conf"
